@@ -1,0 +1,23 @@
+1
+0
+1.2
+100000
+108
+0.05
+5.
+7.
+1
+500000
+
+  ReadInput >> iNVET;     0=MD(NVE) // 1=MC(NVT)
+  ReadInput >> restart;	  0 se no restart // 1 se restart
+  ReadInput >> temp;   	  sol = 0.8 (metti 1.543 per equilibrazione in MD)    liq = 1.1 (metti 1.978 in MD)    gas = 1.2 (metti 0.947 in MD)
+  ReadInput >> eq_time;	  sol = 50000	liq = 50000	gas = 100000
+  ReadInput >> npart;	    108
+  ReadInput >> rho;       sol = 1.1    liq = 0.8    gas = 0.05
+  ReadInput >> rcut;      sol = 2.2    liq = 2.5    gas = 5.
+  ReadInput >> delta;     0.0005 per MD// per MC: 0.1 sol	        0.2 liq	           7. Gas
+  ReadInput >> nblk; 	    (N)	numero dei blocchi
+  ReadInput >> nstep; 	  (L)	numero di passi per blocco (10000 gas, 2000 altri)
+
+PER QUESTO ESERCIZIO: voglio 500000 valori instantanei di en potenziale per molecola -----> nblk = 1; nstep = 500000
