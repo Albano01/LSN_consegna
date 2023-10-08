@@ -1,0 +1,19 @@
+0
+1
+1
+1
+0.1
+0.1
+2.5
+100
+10000
+
+  ReadInput >> restart;
+  ReadInput >> mu;
+  ReadInput >> sigma;           (Mu e Sigma all'inizio casuali, poi ottimizzazione trova i migliori!)
+  ReadInput >> Delta_x;         Da calibrare per avere 50% di accettazione, per MC
+  ReadInput >> Delta_mu;        Per simulated annealing
+  ReadInput >> Delta_sigma;     Per simulated annealing
+  ReadInput >> temp;            Temperatura iniziale fittizia per simulated annealing
+  ReadInput >> nblk;
+  ReadInput >> nstep;
