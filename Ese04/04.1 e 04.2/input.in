@@ -1,0 +1,19 @@
+0
+0
+1.979
+108
+0.8
+2.5
+0.0005
+20
+2000
+
+  ReadInput >> iNVET;                                 0=MD(NVE) 1=MC(NVT)
+  ReadInput >> restart;                               0 se no restart // 1 se restart 
+  ReadInput >> temp;                                  sol = 0.8 (metti 1.543 per equilibrazione)    liq = 1.1 (metti 1.979)    gas = 1.2 (metti 0.947)   (SOLO IN MD!)
+  ReadInput >> npart;                                 108
+  ReadInput >> rho;                                   sol = 1.1    liq = 0.8    gas = 0.05
+  ReadInput >> rcut;                                  sol = 2.2    liq = 2.5    gas = 5.
+  ReadInput >> delta;                                 0.0005 per MD // per MC: 0.1 sol	0.2 liq	  7. Gas
+  ReadInput >> nblk;                                  numero di blocchi
+  ReadInput >> nstep;                                 numero passi per blocco (20000 gas, 2000 altri)
