@@ -1,0 +1,13 @@
+1000
+5000
+20
+3
+0.8
+0.3
+
+  ReadInput >> N_Cromosomi;         (numero di cromosomi (ovvero percorsi) che evolvo. Costituiscono la popolazione)
+  ReadInput >> N_Generazioni;       (numero di generazioni dopo le quali scelgo il cromosoma migliore)
+  ReadInput >> N_Migrazioni;        (numero di migrazioni tra continenti)
+  ReadInput >> pot_selezione;       (potenza dell'operatore di selezione)    3
+  ReadInput >> p_crossover;         (probabilità di fare crossover)    >50%
+  ReadInput >> p_mutazioni;         (probabilità di fare mutazione)    <10% per ciascuna (sono 4)
